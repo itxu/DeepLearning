@@ -1,0 +1,59 @@
+PODS:
+  - Alamofire (4.8.2)
+  - HandyJSON (4.2.1)
+  - Kingfisher (5.3.1)
+  - RxAtomic (4.4.2)
+  - RxCocoa (4.4.2):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.4.2):
+    - RxAtomic (>= 4.4.2, ~> 4.4)
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/standard (0.11.5)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - HandyJSON (from `https://github.com/alibaba/HandyJSON.git`)
+  - Kingfisher
+  - RxCocoa
+  - RxSwift
+  - SQLite.swift
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+    - SQLite.swift
+    - SVProgressHUD
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  HandyJSON:
+    :git: https://github.com/alibaba/HandyJSON.git
+
+CHECKOUT OPTIONS:
+  HandyJSON:
+    :commit: 98e1355dd5c4bf9271f23f1923f3545518ff87a9
+    :git: https://github.com/alibaba/HandyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
+  Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
+  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
+  RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
+  RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 66ab2a7642e98ccd3c41057623c3335839737842
+
+COCOAPODS: 1.5.3
