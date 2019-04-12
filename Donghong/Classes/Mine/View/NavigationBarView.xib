@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavigationBarView" customModule="Donghong" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDA-dU-Bf6">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggh-es-zBQ">
+                            <rect key="frame" x="15" y="4.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="cU5-b3-Co7"/>
+                                <constraint firstAttribute="height" constant="35" id="loO-4C-ykd"/>
+                            </constraints>
+                            <state key="normal" image="personal_home_back_white_24x24_"/>
+                            <connections>
+                                <action selector="returnButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="caY-v7-PPV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIm-hC-jRo">
+                            <rect key="frame" x="364" y="4.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="0d8-lw-flS"/>
+                                <constraint firstAttribute="height" constant="35" id="flL-DD-4uY"/>
+                            </constraints>
+                            <state key="normal" image="new_morewhite_titlebar_22x22_"/>
+                            <connections>
+                                <action selector="moreButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="ax7-xo-Tbz"/>
+                            </connections>
+                        </button>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSK-98-BWN">
+                            <rect key="frame" x="186" y="11.5" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="EIm-hC-jRo" firstAttribute="centerY" secondItem="ggh-es-zBQ" secondAttribute="centerY" id="0kG-s0-Xf5"/>
+                        <constraint firstItem="ggh-es-zBQ" firstAttribute="leading" secondItem="FDA-dU-Bf6" secondAttribute="leading" constant="15" id="CGr-oz-a0Y"/>
+                        <constraint firstItem="WSK-98-BWN" firstAttribute="centerY" secondItem="FDA-dU-Bf6" secondAttribute="centerY" id="KL6-0E-Tbm"/>
+                        <constraint firstItem="ggh-es-zBQ" firstAttribute="centerY" secondItem="FDA-dU-Bf6" secondAttribute="centerY" id="KoP-Gc-fdF"/>
+                        <constraint firstAttribute="height" constant="44" id="MKS-ti-m0B"/>
+                        <constraint firstAttribute="trailing" secondItem="EIm-hC-jRo" secondAttribute="trailing" constant="15" id="ZNF-Qu-NTZ"/>
+                        <constraint firstItem="WSK-98-BWN" firstAttribute="centerX" secondItem="FDA-dU-Bf6" secondAttribute="centerX" id="tkU-fM-3yK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjc-6K-ZqY">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="S0o-TC-q5f"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FDA-dU-Bf6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6IH-Cn-bV4"/>
+                <constraint firstItem="FDA-dU-Bf6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="BGK-Zh-mIR"/>
+                <constraint firstItem="jjc-6K-ZqY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QIw-oS-JYM"/>
+                <constraint firstItem="FDA-dU-Bf6" firstAttribute="top" secondItem="jjc-6K-ZqY" secondAttribute="bottom" id="b2Y-NL-rny"/>
+                <constraint firstItem="jjc-6K-ZqY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rk7-y6-6rm"/>
+                <constraint firstAttribute="trailing" secondItem="jjc-6K-ZqY" secondAttribute="trailing" id="vUF-aa-LtJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="moreButton" destination="EIm-hC-jRo" id="zDg-jF-2tS"/>
+                <outlet property="nameLabel" destination="WSK-98-BWN" id="fdg-3T-gd1"/>
+                <outlet property="navigationBar" destination="FDA-dU-Bf6" id="1yr-Fr-mUO"/>
+                <outlet property="returnButton" destination="ggh-es-zBQ" id="wJW-Fr-smo"/>
+            </connections>
+            <point key="canvasLocation" x="153.62318840579712" y="229.01785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="new_morewhite_titlebar_22x22_" width="22" height="22"/>
+        <image name="personal_home_back_white_24x24_" width="24" height="24"/>
+    </resources>
+</document>

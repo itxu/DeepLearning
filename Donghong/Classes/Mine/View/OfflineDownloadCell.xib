@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OfflineDownloadCell" customModule="Donghong" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="air_download_option_press_20x20_" translatesAutoresizingMaskIntoConstraints="NO" id="oX9-wc-hTL">
+                        <rect key="frame" x="285" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7Ao-8K-q8F"/>
+                            <constraint firstAttribute="width" constant="20" id="ecY-QV-NUE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkB-x0-OVN">
+                        <rect key="frame" x="15" y="0.0" width="42" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RkB-x0-OVN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0b7-vB-8xL"/>
+                    <constraint firstItem="RkB-x0-OVN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0dG-MV-sRV"/>
+                    <constraint firstItem="oX9-wc-hTL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DNa-bh-SD5"/>
+                    <constraint firstAttribute="bottom" secondItem="RkB-x0-OVN" secondAttribute="bottom" id="TTB-y9-PgG"/>
+                    <constraint firstAttribute="trailing" secondItem="oX9-wc-hTL" secondAttribute="trailing" constant="15" id="nfH-0Q-0Xm"/>
+                    <constraint firstItem="RkB-x0-OVN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="t2f-oN-Miv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="fuckyou" destination="RkB-x0-OVN" id="lbK-2u-HnT"/>
+                <outlet property="rightImage" destination="oX9-wc-hTL" id="o2I-yn-zoQ"/>
+            </connections>
+            <point key="canvasLocation" x="140.80000000000001" y="138.53073463268368"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="air_download_option_press_20x20_" width="20" height="20"/>
+    </resources>
+</document>
